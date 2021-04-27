@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de Esportes</h1>
+        <p id="subtitulo">Preencha suas informações</p>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label>Nome:</label>
+                <input type="text" name="nome" id="Nome" required>
+            </div>
+
+            <div class="campo">
+                <label>Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+        
+        <div class="campo">
+            <label>Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label>Quais esportes você pratica?</label>
+            <label>
+                <input type="radio" name="esporte" value="Vôlei">Vôlei
+            </label>
+            <label>
+                <input type="radio" name="esportes" value="futebol">Futebol
+            </label>
+            <label>
+                <input type="radio" name="esportes" value="futsal">Futsal
+            </label>
+        </div>
+
+            <div class="campo">
+                <label>Nivel</label>
+                <select id="nivel">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Profissional</option>
+                    <option>Amador</option>
+                    <option>Por diversão</option>
+                </select>
+            </div>
+            <fieldset class="grupo">
+                <div id="check">
+                    <label>Selecione se já obteve alguma lesão:</label><br><br>
+                    <input type="checkbox" id="lesao1" name="lesao1" value="Tornozelo torcido">
+                    <label for="lesao1">Tornozelo torcido</label>
+                    <input type="checkbox" id="lesao2" name="lesao2" value="Dor na lombar">
+                    <label for="lesao2 ">Dor na lombar</label>
+                    <input type="checkbox" id="lesao3" name="lesao3" value="Lesões no joelho">
+                    <label for="lesao3 ">Lesões no joelho</label>
+                    <input type="checkbox" id="lesao4" name="lesao4" value="Distensão muscular">
+                    <label for="lesão4">Distensão muscular</label>
+                    <input type="checkbox" id="lesao5" name="lesao5" value="Nenhuma">
+                    <label for="lesao5">Nenhuma</label>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <br>
+                <label>Conte um pouco sobre sua história com o esporte:</label>
+                <textarea row="6" style="width: 26em" id="historia" name="historia"></textarea>
+            </div>
+            <button class="botao" type="submit">Conclui</button>
+    </form>
+</body>
+</html>
